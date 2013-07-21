@@ -1,0 +1,57 @@
+getopt.o: ../getopt.c /usr/arm-unknown-linux-gnueabi/usr/include/stdio.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/features.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/stdc-predef.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/sys/cdefs.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/wordsize.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/gnu/stubs.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/gnu/stubs-soft.h \
+ /usr/lib/gcc/arm-unknown-linux-gnueabi/4.7.3/include/stddef.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/types.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/typesizes.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/libio.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/_G_config.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/wchar.h \
+ /usr/lib/gcc/arm-unknown-linux-gnueabi/4.7.3/include/stdarg.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/stdio_lim.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/sys_errlist.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/stdio.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/bits/stdio2.h \
+ /usr/arm-unknown-linux-gnueabi/usr/include/gnu-versions.h
+
+/usr/arm-unknown-linux-gnueabi/usr/include/stdio.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/features.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/stdc-predef.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/sys/cdefs.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/wordsize.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/gnu/stubs.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/gnu/stubs-soft.h:
+
+/usr/lib/gcc/arm-unknown-linux-gnueabi/4.7.3/include/stddef.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/types.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/typesizes.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/libio.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/_G_config.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/wchar.h:
+
+/usr/lib/gcc/arm-unknown-linux-gnueabi/4.7.3/include/stdarg.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/stdio_lim.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/sys_errlist.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/stdio.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/bits/stdio2.h:
+
+/usr/arm-unknown-linux-gnueabi/usr/include/gnu-versions.h:
