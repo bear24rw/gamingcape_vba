@@ -1,3 +1,17 @@
+Fork of [Visual Boy Advance](http://vba.ngemu.com/) for my [beagleboy](https://github.com/bear24rw/beagleboy) project.
+
+```
+% sudo ebuild /usr/portage/games-emulation/visualboyadvance/visualboyadvance-1.7.2-r3.ebuild fetch
+% sudo ebuild /usr/portage/games-emulation/visualboyadvance/visualboyadvance-1.7.2-r3.ebuild unpack
+% sudo ebuild /usr/portage/games-emulation/visualboyadvance/visualboyadvance-1.7.2-r3.ebuild compile
+```
+
+```
+% ./configure --enable-c-core --disable-profiling --disable-dev --disable-sdltest --target=arm --prefix=/usr/arm-unknown-linux-gnueabi CC=/usr/bin/arm-unknown-linux-gnueabi-gcc CXX=/usr/bin/arm-unknown-linux-gnueabi-g++ --host=x86_64
+% make
+% scp src/sdl/VisualBoyAdvance root@192.168.1.127:
+```
+--
 Welcome to version 1.7.2 of VisualBoyAdvance [SDL].
 This is a GB/GBC/GBA emulator for Windows, Linux, MacOS X and BeOS.
 
