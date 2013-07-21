@@ -39,6 +39,8 @@
 #include "gb/GB.h"
 #include "gb/gbGlobals.h"
 
+#include "beagleboy.h"
+
 #ifndef WIN32
 # include <unistd.h>
 # define GETCWD getcwd
@@ -2290,7 +2292,10 @@ int main(int argc, char **argv)
   if(SDL_InitSubSystem(SDL_INIT_JOYSTICK)) {
     systemMessage(0, "Failed to init joystick support: %s", SDL_GetError());
   }
-  
+
+  bb_init();
+  bb_load_cal();
+
   sdlCheckKeys();
   
   if(cartridgeType == 0) {
@@ -2777,6 +2782,18 @@ u32 systemReadJoypad(int which)
     res |= 256;
   if(sdlButtons[which][KEY_BUTTON_L])
     res |= 512;
+
+  if (which == 0) {
+      bb_refresh();
+      if (bb_joy_y > 200) res |= 64;
+      if (bb_joy_y < -200) res |= 128;
+      if (bb_joy_x > 200) res |= 16;
+      if (bb_joy_x < -200) res |= 32;
+      if (bb_a) res |= 1;
+      if (bb_b) res |= 2;
+      if (bb_joy_y > 200 && bb_a && bb_b) res |= 8;
+      if (bb_joy_y < -200 && bb_a && bb_b) res |= 4;
+  }
 
   // disallow L+R or U+D of being pressed at the same time
   if((res & 48) == 48)
